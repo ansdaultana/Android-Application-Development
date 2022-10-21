@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sms"
+    android:orientation="vertical"
+
+    android:padding="16dp"
+
+
+    >
+    <TextView
+        android:id="@+id/Numheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Displayimage"
+        android:layout_marginTop="5dp"
+        android:text="Phone Number:"
+        android:textColor="@color/black"
+        android:textSize="15dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/DisplayMobilePhoneNumber"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/backgroundinput"
+
+        android:padding="18dp"
+
+        android:textColor="@color/black"
+
+        android:textSize="17dp"
+
+        />
+
+    <TextView
+        android:id="@+id/Smswrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Displayimage"
+        android:layout_marginTop="5dp"
+        android:text="Write Sms:"
+        android:textColor="@color/black"
+        android:textSize="15dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/MessageInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+android:gravity="top"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/backgroundinput"
+        android:hint="Enter Message"
+        android:inputType="textMultiLine"
+        android:minLines="6"
+
+        android:padding="18dp"
+
+        android:textColor="@color/black"
+
+        android:textSize="17dp"
+
+        />
+
+    <ImageButton
+        android:layout_marginTop="20dp"
+        android:id="@+id/sendbutton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end|bottom"
+android:background="@color/teal_200"
+
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+
+
+        android:src="@drawable/ic_baseline_send_24" />
+</LinearLayout>
